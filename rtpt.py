@@ -123,8 +123,7 @@ def main():
     ###### load robust vision encoder (TeCoA) ######
     if len(args.load_tecoa) > 0:
         args.robust_pretrain_path = {
-            # 'RN50-eps1': 'pretrain/tecoa/rn50_eps1.pth.tar',
-            'RN50-eps1': '/data/shenglijun/code/my_code/project/clip_adversarial_training/APT-main/apt/backbone/rn50_eps1.pth.tar',
+            'RN50-eps1': 'pretrain/tecoa/rn50_eps1.pth.tar',
         }[args.load_tecoa]
         robust_state_dict = torch.load(args.robust_pretrain_path, map_location='cpu')
         model.image_encoder.load_state_dict(robust_state_dict['vision_encoder_state_dict'])
@@ -295,7 +294,7 @@ if __name__ == '__main__':
     parser.add_argument('--n_ctx', default=4, type=int, help='number of tunable tokens')
     parser.add_argument('--ctx_init', default=None, type=str, help='init tunable prompts')
     parser.add_argument('--seed', type=int, default=0)
-    parser.add_argument('--output_dir', type=str, default='output_results/ckps_temp/temp')
+    parser.add_argument('--output_dir', type=str, default='output_results/ckps/rtpt')
 
     parser.add_argument('--eps', default=0.0, type=float)
     parser.add_argument('--alpha', default=0.0, type=float)

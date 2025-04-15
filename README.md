@@ -11,7 +11,7 @@ Our implementation is based on [TPT](https://github.com/azshue/TPT) and [adversa
 
 ### Dataset:
 Please follow [CoOp](https://github.com/KaiyangZhou/CoOp) and manually download the require datasets.
-Replace /path/to/dataset with your dataset folder root in below commands and replace /path/to/json in fewshot_datasets.py.
+Replace /path/to/dataset with your dataset folder root in below commands and check the path of json file in fewshot_datasets.py.
 
 ### Test-time adaptation:
 1. ##### Adaptation on clean dataset (R-TPT)
