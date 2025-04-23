@@ -4,6 +4,10 @@
 
 Our implementation is based on [TPT](https://github.com/azshue/TPT) and [adversarial-attacks-pytorch](https://github.com/Harry24k/adversarial-attacks-pytorch).
 
+### Framework:  
+
+<img src="figs/rtpt.jpg" width="600"/>
+
 ### Prerequisites:
 - python == 3.8.5
 - pytorch == 1.12.1
